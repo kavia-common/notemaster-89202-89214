@@ -1,16 +1,23 @@
-# notes_frontend
+# Notemaster - Notes Frontend
 
-A new Flutter project.
+A modern Flutter notes application with local SQLite persistence.
 
-## Getting Started
+Features:
+- Tabbed navigation: Notes list and New note
+- Create, edit, delete notes
+- Local SQLite storage using sqflite
+- Ocean Professional theme (blue and amber accents)
+- Smooth transitions, rounded corners, minimalist design
 
-This project is a starting point for a Flutter application.
+Run:
+- flutter pub get
+- flutter run
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Structure:
+- lib/src/models/note.dart — Note model
+- lib/src/db/notes_database.dart — SQLite CRUD
+- lib/src/providers/notes_provider.dart — State management (Provider)
+- lib/src/pages/home_page.dart — Tabs and list/new note
+- lib/src/pages/note_editor_page.dart — Editor page
+- lib/src/widgets/note_card.dart — Note list item card
+- lib/src/theme/app_theme.dart — Theme configuration
